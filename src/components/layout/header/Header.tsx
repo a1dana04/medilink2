@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import logo from "../../../assets/img/Logo.png";
 
 import { IoMenu } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
-import sass from "../../../components/layout/header/Header.module.scss"
+import sass from "../../../components/layout/header/Header.module.scss";
 
 const Header = () => {
   const [modal, setModal] = useState(false);
@@ -21,14 +21,15 @@ const Header = () => {
           <Image src={logo} alt="img" />
 
           <div className={sass.nav}>
-
             <Link href={"/"}>Главная</Link>
             <Link href={"/"}>Запись на консультацию</Link>
           </div>
           <div className={sass.btn}>
             <button>Выбрать специалиста</button>
             <div className={sass.btn2}>
-              <button>Войти</button>
+              <Link href={"/personal-account"}>
+                <button>Войти</button>
+              </Link>
             </div>
           </div>
           <h1 onClick={openModal}>
@@ -38,12 +39,12 @@ const Header = () => {
 
         {modal && (
           <div className={sass.modal}>
-             <Image src={logo} alt="img" />
+            <Image src={logo} alt="img" />
             <span onClick={() => setModal(false)}>X</span>
-            <Link href={"/"}>Главная</Link>
-            <Link href={"/"}>Запись на консультацию</Link>
+            <Link href={"/#"}>Главная</Link>
+            <Link href={"/#"}>Запись на консультацию</Link>
             <a href="#">Выбрать специалиста</a>
-            <a href="#">Войти</a>
+            <Link href="/#">Войти</Link>
           </div>
         )}
       </div>
