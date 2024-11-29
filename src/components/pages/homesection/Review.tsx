@@ -33,7 +33,7 @@ const reviews = [
 const Review = () => {
   return (
     <div className={sass.review1}>
-      <div className="container">
+      <div className="">
         <div className={sass.review}>
           {reviews.map((review, index) => (
             <div key={index} className={sass.from}>

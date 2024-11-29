@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import heart from "@/assets/img/heart-q.png";
 import shugar from "@/assets/img/shugar-q.png";
@@ -5,6 +6,7 @@ import allerg from "@/assets/img/allerg-q.png";
 import kost from "@/assets/img/kost-q.png";
 import Image from "next/image";
 import sass from "../homesection/Quations.module.scss";
+import { useRouter } from "next/navigation";
 
 const cardData = [
   { img: heart, title: "Проблемы с сердцем" },
@@ -22,6 +24,7 @@ const cardData = [
 ];
 
 const Quations = () => {
+  const router = useRouter()
   return (
     <div className={sass.quations1}>
       <div className="container">
@@ -37,7 +40,7 @@ const Quations = () => {
           ))}
         </div>
         <div className={sass.btn}>
-          <button>Задать вопрос</button>
+          <button onClick={() => router.push("/profile-doctor")}>Задать вопрос</button>
         </div>
       </div>
     </div>
