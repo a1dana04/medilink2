@@ -26,7 +26,7 @@ const Glavnyi = () => {
                 <button className={sass.btn2}>Ребёнку</button>
               </div>
               <p>от 1 200 сом за консультацию</p>
-              <Link href={"/chooseDoctor"}>
+              <Link href={"/choose-doctor"}>
                 <button className={sass.btn3}>Подобрать специалиста</button>
               </Link>
             </div>
