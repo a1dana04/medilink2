@@ -1,0 +1,51 @@
+.zapis {
+    .btn {
+        display: flex;
+        gap: 10px;
+        .btn1 {
+
+            padding: 10px 30px;
+            
+            border-radius: 10px;
+            background: #D7EAFF;
+
+
+        }
+
+
+        .btn2 {
+
+            padding: 10px 30px;
+            
+            border-radius: 10px;
+            background: #D7EAFF;
+
+
+        }
+
+
+        .btn3 {
+
+            padding: 10px 30px;
+           
+            border-radius: 10px;
+            background: #D7EAFF;
+
+
+        }
+
+
+    }
+
+    .date{
+        display: flex;
+        align-items: center;
+        gap: 30%;
+    margin-left: 30px;
+    margin-top: 25px;
+        h1{
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}

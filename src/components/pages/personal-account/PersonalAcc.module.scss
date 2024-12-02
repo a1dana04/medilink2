@@ -1,0 +1,93 @@
+.acc{
+    width: 115%;
+    height: 700px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(175, 167, 167, 0.5);
+    padding: 15px 25px;
+    h1{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .acc1_nav{
+
+       
+        color: black;
+        margin-top: 20px;
+        .zapis{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 5px;
+            
+            a{
+                font-size: 20px;
+                color: black;
+                font-weight: 300;
+            }
+            span{
+                font-size: 22px;
+            }
+            
+        }
+
+        .zapis:hover{
+            background: #D7EAFF;
+            border-radius: 5px;
+            padding: 5px 5px;
+
+        }
+        .chat{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+    
+            a{
+                font-size: 20px;
+                color: black;
+                font-weight: 300;
+            }
+            span{
+                font-size: 22px;
+            }
+        }
+        .chat:hover{
+            background: #D7EAFF;
+            border-radius: 5px;
+            padding: 5px 5px;
+
+        }
+
+    }
+   
+
+    .lagout{
+        margin-top: 220%;
+   
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    
+
+        a{
+            font-size: 20px;
+            color: black;
+            font-weight: 300;
+        }
+        span{
+            font-size: 22px;
+        }
+
+    }
+    .lagout:hover{
+        background: #D7EAFF;
+            border-radius: 5px;
+            padding: 5px 5px;
+
+
+    }
+
+
+}
