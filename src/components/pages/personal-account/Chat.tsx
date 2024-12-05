@@ -8,7 +8,7 @@ import { FaCircle } from "react-icons/fa6";
 const Chat = () => {
   return (
     <div className={sass.chat}>
-      <div className={sass.inpt1}>
+      <div className={sass.input1}>
         <input type="text" placeholder="Введите имя специалиста" />
         <button>
           <span>
@@ -16,25 +16,23 @@ const Chat = () => {
           </span>
         </button>
       </div>
+      <div className={sass.chat_doc1}>
+        <div className={sass.chat_doc}>
+          <div className={sass.circle}>
+            <Image src={foto1} alt="img" />
+            <p>
+              <FaCircle />
+            </p>
+          </div>
 
-      <div className={sass.chat_doc}>
-        <div className={sass.circle}>
-          <Image src={foto1} alt="img" />
-          <button>
-            <FaCircle />
-          </button>
+          <div className={sass.name1}>
+            <h1>Светлана Александровна</h1>
+            <span>Педиатр</span>
+          </div>
         </div>
-
-        <div className={sass.name1}>
-          <h1>Светлана Александровна</h1>
-          <span>Педиатр</span>
-        </div>
-
         <div className={sass.data}>
-            <p>10:58</p>
-            <h1></h1>
-          
-
+          <h3>10:58</h3>
+          <p>2</p>
         </div>
       </div>
     </div>
